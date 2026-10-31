@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#f8eee7" />
+<title>Two Months, My Ma ♡</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Caveat:wght@500;600&display=swap');
+:root{--cream:#fbf4ec;--paper:#fffaf4;--rose:#d98e91;--deep:#743c49;--wine:#5b2938;--blush:#f4d9d5;--gold:#c5a16a;--ink:#49343a;--muted:#8b7074}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:'DM Sans',sans-serif;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.18;z-index:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.12'/%3E%3C/svg%3E")}
+main,header,footer{position:relative;z-index:1}.hero{min-height:100svh;display:flex;align-items:center;justify-content:center;text-align:center;padding:70px 22px 56px;position:relative;overflow:hidden;background:radial-gradient(ellipse at 50% 25%,#fffaf7 0%,#f9e9e2 48%,#f4ded7 100%)}
+.hero:after{content:"";position:absolute;width:min(78vw,650px);aspect-ratio:1;border:1px solid #d5a6a04f;border-radius:50%;top:50%;left:50%;transform:translate(-50%,-50%);box-shadow:0 0 0 26px #ffffff18,0 0 0 52px #ffffff12}
+.orbit{position:absolute;width:min(90vw,760px);aspect-ratio:1;border:1px dashed #c99c9b70;border-radius:50%;animation:rotate 90s linear infinite}
+@keyframes rotate{to{transform:rotate(360deg)}}.hero-inner{max-width:760px;position:relative;z-index:2}
+.eyebrow{font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:var(--deep);font-weight:700}.tiny-heart{color:var(--rose);font-size:1.25rem;margin:18px auto}
+h1,h2,h3{font-family:'Playfair Display',serif;font-weight:500}h1{font-size:clamp(3.3rem,10vw,7.2rem);line-height:.98;letter-spacing:-.055em;margin:20px 0;color:var(--wine)}h1 em{font-weight:500;color:#bd777d}.hero-sub{max-width:490px;margin:24px auto 30px;line-height:1.9;color:#775b61;font-size:1rem}.script{font-family:'Caveat',cursive;color:var(--deep);font-size:1.7rem;transform:rotate(-3deg);display:inline-block}
+.btn{border:0;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;gap:10px;background:var(--wine);color:#fff8f1;border-radius:999px;padding:15px 23px;font:600 .9rem 'DM Sans',sans-serif;box-shadow:0 10px 28px #743c4928;transition:transform .25s,box-shadow .25s}.btn:hover{transform:translateY(-3px);box-shadow:0 14px 32px #743c4933}.scroll-note{position:absolute;bottom:25px;left:50%;transform:translateX(-50%);font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:#9b7478}
+section{padding:100px 22px}.section-inner{max-width:1000px;margin:auto}.section-label{text-align:center;color:#ad777b;font-size:.7rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase}.section-title{text-align:center;font-size:clamp(2.2rem,5vw,4rem);line-height:1.1;margin:15px 0 18px;color:var(--wine)}.section-intro{max-width:600px;text-align:center;line-height:1.85;color:var(--muted);margin:0 auto 48px}
+.letter-section{background:var(--paper)}.letter-card{max-width:720px;margin:auto;background:#fffdf9;border:1px solid #ead8cf;padding:clamp(27px,6vw,58px);box-shadow:0 22px 65px #7144510e;position:relative;transform:rotate(-.35deg)}.letter-card:before{content:"";position:absolute;inset:10px;border:1px solid #ead8cf;pointer-events:none}.letter-card>*{position:relative}.letter-top{font-family:'Caveat',cursive;font-size:1.7rem;color:#b87a7c}.letter-card h2{font-size:clamp(2rem,5vw,3.1rem);margin:14px 0 23px}.letter-card p{line-height:2;font-size:1rem;color:#6e5559}.signature{font-family:'Caveat',cursive;font-size:2rem;color:var(--deep);margin-top:24px}
+.memory-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.memory{background:var(--paper);padding:12px 12px 22px;box-shadow:0 12px 32px #7546500b;transform:rotate(var(--tilt));transition:transform .3s}.memory:hover{transform:rotate(0) translateY(-5px)}.photo-placeholder{aspect-ratio:4/4.4;background:linear-gradient(145deg,#f6e0dc,#edd0ca);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;color:#a76f75}.photo-placeholder:before,.photo-placeholder:after{content:"";position:absolute;border:1px solid #ffffff70;border-radius:50%;width:75%;aspect-ratio:1}.photo-placeholder:after{width:48%}.photo-placeholder span{font-size:2rem;z-index:1}.photo-slot{aspect-ratio:4/4.4;background:linear-gradient(145deg,#f6e0dc,#edd0ca);position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center}.photo-slot img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0;z-index:2}.photo-slot .photo-fallback{position:relative;z-index:1;text-align:center;padding:16px;color:#a76f75;display:flex;flex-direction:column;align-items:center;gap:12px}.photo-slot .photo-fallback span{font-size:2rem}.photo-slot code{font-family:'DM Sans',sans-serif;font-size:.72rem;overflow-wrap:anywhere;color:#875b61;background:#fffaf480;padding:5px 8px;border-radius:5px}.memory h3{text-align:center;font-size:1.35rem;margin:18px 5px 5px;color:var(--wine)}.memory p{text-align:center;font-size:.82rem;line-height:1.6;color:var(--muted);margin:6px 8px 0}
+.notes-section{background:#f5e3dd}.notes-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.note{min-height:180px;padding:24px 20px;background:#fffaf4;border:1px solid #ead1c9;border-radius:4px;text-align:left;cursor:pointer;transition:transform .25s,box-shadow .25s;position:relative;color:var(--ink)}.note:hover{transform:translateY(-5px) rotate(-1deg);box-shadow:0 12px 25px #6b3d4412}.note .num{font-size:.68rem;letter-spacing:.16em;color:#bc8887}.note h3{font-size:1.55rem;margin:16px 0 0}.note .tap{position:absolute;bottom:18px;right:18px;font-size:.75rem;color:#ad777b}.note .revealed{display:none;line-height:1.8;font-size:.9rem;margin-top:12px;color:#76595e}.note.open h3{display:none}.note.open .revealed{display:block}.note.open .tap{display:none}
+.promise-wrap{max-width:760px;margin:auto;text-align:center}.promise-quote{font-family:'Playfair Display',serif;font-size:clamp(1.7rem,4.5vw,3.2rem);line-height:1.45;color:var(--wine);margin:30px 0}.promise-small{max-width:560px;margin:auto;line-height:1.9;color:var(--muted)}
+.final-section{text-align:center;background:var(--wine);color:#fdf2eb;padding:95px 22px 100px;overflow:hidden}.final-section .section-label{color:#e2b7b1}.final-section .section-title{color:#fff5ec}.final-section p{max-width:550px;line-height:1.9;color:#e9d2ce;margin:0 auto 25px}.final-heart{font-size:3rem;display:block;margin:10px auto 18px;animation:heartbeat 1.8s ease-in-out infinite}@keyframes heartbeat{0%,100%{transform:scale(1)}50%{transform:scale(1.12)}}.final-sign{font-family:'Caveat',cursive;font-size:2rem;color:#f2c9c2}
+footer{text-align:center;padding:22px;font-size:.75rem;color:#99777a;background:#f8eee7}
+.fade{opacity:0;transform:translateY(22px);transition:opacity .8s ease,transform .8s ease}.fade.visible{opacity:1;transform:translateY(0)}
+.floating{position:fixed;bottom:-30px;pointer-events:none;z-index:9;animation:floatUp 5s ease-in forwards;color:#bd777d}@keyframes floatUp{to{transform:translateY(-110vh) rotate(35deg);opacity:0}}
+.modal{position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:#321923a8;z-index:20;padding:20px}.modal.show{display:flex}.modal-card{max-width:440px;width:100%;background:var(--paper);padding:38px 30px;text-align:center;position:relative;box-shadow:0 25px 90px #180c1066}.modal-card h2{font-size:2rem;color:var(--wine)}.modal-card p{line-height:1.8;color:#795e63}.close{border:0;background:transparent;font-size:1.6rem;position:absolute;right:15px;top:10px;cursor:pointer;color:var(--deep)}
+@media(max-width:700px){section{padding:76px 18px}.memory-grid{grid-template-columns:1fr;max-width:340px;margin:auto;gap:22px}.memory{transform:none}.photo-placeholder{aspect-ratio:1.15}.notes-grid{grid-template-columns:1fr}.note{min-height:150px}.hero-sub{font-size:.93rem}.orbit{width:115vw}.hero:after{width:100vw}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}.fade{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<header class="hero" id="top">
+  <div class="orbit"></div>
+  <div class="hero-inner">
+    <div class="eyebrow">A little corner of the internet · just for you</div>
+    <div class="tiny-heart">♡</div>
+    <p class="script">for my favourite person</p>
+    <h1>Happy two<br><em>months, ma.</em></h1>
+    <p class="hero-sub">Two months of being your person. Two months of learning the little things that make you <em>you</em>. And a whole lot of love that doesn't fit neatly into a calendar.</p>
+    <button class="btn" onclick="document.querySelector('#letter').scrollIntoView({behavior:'smooth'})">Open your little letter <span>♡</span></button>
+  </div>
+  <div class="scroll-note">made with love · scroll slowly ↓</div>
+</header>
+<main>
+<section class="letter-section" id="letter">
+  <div class="section-inner fade">
+    <div class="section-label">01 · from me to you</div>
+    <h2 class="section-title">A letter for my ma</h2>
+    <p class="section-intro">No grand speech. Just my heart, trying its best to find the words.</p>
+    <article class="letter-card">
+      <div class="letter-top">hello, my Malar ♡</div>
+      <h2>Two months with you.</h2>
+      <p>Ma, happy two-month anniversary to us. ❤️</p>
+      <p>Sometimes I still pause and smile at the fact that I get to call you <em>my person</em>. After all those years of feelings, all those little moments that brought us here, we're making our own memories now. And I don't want to rush past even one of them.</p>
+      <p>I love the way I can be myself with you, the way an ordinary conversation can become the best part of my day, and the way your presence makes things feel a little softer. I love the serious talks, the silly talks, the singing, the voice notes, the tiny moments that might look ordinary to anyone else but mean so much to me.</p>
+      <p>I know the future can feel big and uncertain sometimes. We don't have to figure out every chapter today, ma. We can keep growing, learning each other, and taking things one honest step at a time. I want my love to feel like a safe place for you—not another thing you have to be scared of getting wrong.</p>
+      <p>Thank you for choosing to share these two months with me. I want to keep showing up, keep listening, keep making you laugh, and keep loving you in ways that feel right for you. Not just in the big moments, but in the everyday ones too.</p>
+      <p>Two months down, ma. I’m so happy it’s you. And I’m really looking forward to all the little tomorrows we get to discover together. ♡</p>
+      <div class="signature">Always your Hirthik ♡</div>
+    </article>
+  </div>
+</section>
+<section id="little-things">
+  <div class="section-inner fade">
+    <div class="section-label">02 · my favourite kind of magic</div>
+    <h2 class="section-title">The little things I keep</h2>
+    <p class="section-intro">Some memories are loud and some are tiny. Somehow, the tiny ones find the biggest place in my heart.</p>
+    <div class="memory-grid">
+      <article class="memory" style="--tilt:-1.7deg"><div class="photo-slot"><img src="our-first-memory.jpg" alt="Our first memory" onerror="this.style.display='none'"><div class="photo-fallback"><span>♡</span><code>our-first-memory.jpg</code></div></div><h3>Our First Memory</h3><p>A little piece of where our story began.</p></article>
+      <article class="memory" style="--tilt:1.2deg"><div class="photo-slot"><img src="her-smile.jpg" alt="Malar's smile" onerror="this.style.display='none'"><div class="photo-fallback"><span>☼</span><code>her-smile.jpg</code></div></div><h3>Your Smile</h3><p>The kind of smile that makes me forget what I was about to say.</p></article>
+      <article class="memory" style="--tilt:-.8deg"><div class="photo-slot"><img src="hand-holding.jpg" alt="A close and lovely memory" onerror="this.style.display='none'"><div class="photo-fallback"><span>✧</span><code>hand-holding.jpg</code></div></div><h3>Close to You</h3><p>A little reminder of how close you feel, even from far away.</p></article>
+      <article class="memory" style="--tilt:1.4deg"><div class="photo-slot"><img src="our-favourite-photo.jpg" alt="Our favourite photo" onerror="this.style.display='none'"><div class="photo-fallback"><span>♡</span><code>our-favourite-photo.jpg</code></div></div><h3>My Favourite</h3><p>One photo, a hundred reasons to smile.</p></article>
+      <article class="memory" style="--tilt:-1.1deg"><div class="photo-slot"><img src="a-random-day.jpg" alt="A random day together" onerror="this.style.display='none'"><div class="photo-fallback"><span>☼</span><code>a-random-day.jpg</code></div></div><h3>An Ordinary Day</h3><p>The everyday little moments I never want to take for granted.</p></article>
+      <article class="memory" style="--tilt:.9deg"><div class="photo-slot"><img src="our-little-world.jpg" alt="Our little world" onerror="this.style.display='none'"><div class="photo-fallback"><span>ღ</span><code>our-little-world.jpg</code></div></div><h3>Our Little World</h3><p>Our talks, our songs, our jokes, and the comfort of being us.</p></article>
+      <article class="memory" style="--tilt:-.7deg"><div class="photo-slot"><img src="silly-selfie.jpg" alt="A silly selfie" onerror="this.style.display='none'"><div class="photo-fallback"><span>✿</span><code>silly-selfie.jpg</code></div></div><h3>Silly Us</h3><p>For the goofy moments that are so completely ours.</p></article>
+    </div>
+    <p style="text-align:center;color:#9a7478;font-size:.8rem;margin-top:25px">♡ Keep these exact filenames and place your photos beside this HTML file. The cards will show your real pictures automatically.</p>
+  </div>
+</section>
+<section class="notes-section" id="notes">
+ <div class="section-inner fade">
+  <div class="section-label">03 · tiny envelopes</div>
+  <h2 class="section-title">Open when you need a little love</h2>
+  <p class="section-intro">Tap a note, ma. I tucked a few reminders in here for you.</p>
+  <div class="notes-grid">
+   <button class="note" onclick="toggleNote(this)"><span class="num">NOTE NO. 01</span><h3>When you miss me</h3><div class="revealed">Imagine me sitting beside you, listening to every little thing you want to tell me. Distance can keep our hands apart for now, but you still have a place in my day and in my heart. Sending you the softest hug, ma. ♡</div><span class="tap">tap to open ↗</span></button>
+   <button class="note" onclick="toggleNote(this)"><span class="num">NOTE NO. 02</span><h3>When things feel heavy</h3><div class="revealed">You don't have to explain everything perfectly or pretend you're okay for me. We can sit with the feeling, take a breath, or talk when you're ready. You can be a work in progress and still be deeply loved. No pressure, ma.</div><span class="tap">tap to open ↗</span></button>
+   <button class="note" onclick="toggleNote(this)"><span class="num">NOTE NO. 03</span><h3>Just because</h3><div class="revealed">I love you, Malar. Not because every day is perfect, not because you always have the right words, but because you're you. I’m grateful for the chance to know you more and love you a little better every day. ♡</div><span class="tap">tap to open ↗</span></button>
+  </div>
+ </div>
+</section>
+<section>
+ <div class="section-inner fade promise-wrap">
+  <div class="section-label">04 · a gentle promise</div>
+  <h2 class="section-title">We don't have to know everything yet.</h2>
+  <div class="promise-quote">“Let's make this love a place where we can both breathe.”</div>
+  <p class="promise-small">We'll have new things to learn about each other, days that feel easy, and days that ask a little more of us. I don't expect us to be perfect, ma. I want us to be honest, kind, and willing to understand each other. One day at a time, together. ♡</p>
+ </div>
+</section>
+<section class="final-section" id="forever">
+ <div class="section-inner fade">
+  <div class="section-label">and lastly, my favourite girl</div>
+  <span class="final-heart">♡</span>
+  <h2 class="section-title">Happy 2 months, Malar.</h2>
+  <p>Thank you for these two months, for every little piece of yourself you've shared with me, and for being the person behind so many of my favourite smiles.</p>
+  <p>Here's to more calls, more songs, more silly moments, more understanding, and more memories that are ours.</p>
+  <div class="final-sign">I love you, ma. — Hirthik</div>
+  <div style="margin-top:30px"><button class="btn" style="background:#f8e8df;color:#743c49" onclick="celebrate()">One last little surprise ✨</button></div>
+ </div>
+</section>
+</main>
+<footer>made slowly, with a full heart · Hirthik ♡ Malar</footer>
+<div class="modal" id="surprise" role="dialog" aria-modal="true" aria-labelledby="surprise-title" onclick="if(event.target===this)closeSurprise()">
+ <div class="modal-card"><button class="close" aria-label="Close" onclick="closeSurprise()">×</button><div style="font-size:2.5rem">💌</div><h2 id="surprise-title">Psst… ma.</h2><p>If I could put these two months into a tiny box, it would be full of your voice, your smile, the comfort of our talks, and a thousand little reasons I’m glad it’s you.</p><p><strong>Happy anniversary, my love. ♡</strong></p><button class="btn" onclick="closeSurprise()">Keep this in my heart ♡</button></div>
+</div>
+<script>
+function toggleNote(el){el.classList.toggle('open');el.setAttribute('aria-expanded',el.classList.contains('open')?'true':'false')}
+const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.fade').forEach(el=>observer.observe(el));
+function celebrate(){document.getElementById('surprise').classList.add('show');for(let i=0;i<22;i++){setTimeout(()=>{const h=document.createElement('span');h.className='floating';h.textContent=['♡','♥','✧','ღ'][Math.floor(Math.random()*4)];h.style.left=Math.random()*100+'vw';h.style.fontSize=(14+Math.random()*20)+'px';h.style.animationDuration=(3.5+Math.random()*2)+'s';document.body.appendChild(h);setTimeout(()=>h.remove(),6000)},i*85)}}
+function closeSurprise(){document.getElementById('surprise').classList.remove('show')}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeSurprise()});
+</script>
+</body>
+</html>
